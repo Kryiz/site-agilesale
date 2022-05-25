@@ -1,0 +1,13 @@
+/*---------- Numbers -------------*/
+.numbers {
+  padding: 100px 0;
+}
+
+.numbers__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=numbers.css.map */

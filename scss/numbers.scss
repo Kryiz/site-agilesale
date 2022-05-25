@@ -1,0 +1,22 @@
+/*---------- Numbers -------------*/
+.numbers {
+    padding: 100px 0;
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        .numbers__item {
+            @include ifont($mont-reg, 22px, 31px, $black);
+            &-first {
+                text-align: center;
+                @include ifont($mont-bold, 60px, 86px, $blue);
+            }
+            &-second {
+                text-align: center;
+                @include ifont($mont-bold, 60px, 86px, $orange);
+            }
+        }
+    }
+}
+.orange {
+    color: $orange;
+}
