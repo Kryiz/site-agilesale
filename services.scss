@@ -1,0 +1,96 @@
+/*--------------- Services ---------------*/
+.services {
+    padding: 100px 0;
+    @media (max-width: 932px) {
+        padding: 70px 0;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        @include ifont($mont-reg, 18px, 22px, $grey-second);
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+        @include ifont($mont-semb, 46px, 69px, $black);
+        @media (max-width: 480px) {
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 40px;
+        padding: 0 124px 0 100px;
+        margin-bottom: 40px;
+        @media (max-width: 932px) {
+            padding: 0;
+        }
+        @media (max-width: 708px) {
+            gap: 0 0;
+        }
+        .services__item {
+            flex: 0 0 47%;
+            display: flex;
+            gap: 40px;
+            padding: 20px 10px 20px 10px;
+            @media (max-width: 590px) {
+                flex: 0 0 100%;
+            }
+            & img {
+                width: 32px;
+                height: 32px;
+            }
+            .services__info {
+                &-title {
+                    margin-bottom: 26px;
+                    @include ifont($mont-semb, 24px, 29px, $black);
+                }
+                &-text {
+                    max-width: 350px;
+                    @include ifont($rob-reg, 16px, 30px, $grey);
+                }
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        padding: 23px 122px 0 215px;
+        @media (max-width: 950px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 10px 0 20px;
+        }
+        &-text {
+            flex: 0 1 490px;
+            @include ifont($rob-reg, 18px, 32px, $grey);
+            @media (max-width: 950px) {
+                margin-bottom: 20px;
+            }
+        }
+        &-btn {
+            
+            padding: 10px 40px 10px 40px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #22d497;
+            border-radius: 40px;
+            @include ifont($rob-med, 16px, 24px, $grey-second);
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+            &:hover {
+                color: $white;
+                background: rgba(34, 212, 151, 0.5);
+                border: 1px solid #22d497;
+            }
+        }
+    }
+}
